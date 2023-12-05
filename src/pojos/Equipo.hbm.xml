@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-dic-2023 22:45:55 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Equipo" table="equipo" catalog="javautn" optimistic-lock="version">
+        <id name="nombre" type="string">
+            <column name="nombre" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="titulares" type="java.lang.Integer">
+            <column name="titulares" />
+        </property>
+        <property name="suplentes" type="java.lang.Integer">
+            <column name="suplentes" />
+        </property>
+        <property name="directorTecnico" type="string">
+            <column name="directorTecnico" length="50" />
+        </property>
+        <property name="puntos" type="java.lang.Integer">
+            <column name="puntos" />
+        </property>
+        <property name="partidosJugados" type="java.lang.Integer">
+            <column name="partidosJugados" />
+        </property>
+    </class>
+</hibernate-mapping>
